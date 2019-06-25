@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/satu"
+    tools:context=".MainActivity">
+
+    <!--Edit text yang digunakan untuk memasukkan angka-->
+    <EditText
+        android:id="@+id/editText2"
+
+        android:layout_width="279dp"
+        android:layout_height="27dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/tiga"
+        android:ems="10"
+        android:hint="Masukkan Angka"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <!--Table Layout agar button tersusun rapi-->
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="304dp"
+        android:layout_height="398dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginTop="21dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/editText2"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="@+id/editText2"
+        app:layout_constraintTop_toBottomOf="@+id/editText2">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="57.5dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="20dp"
+                android:text="1"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="57.5dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:text="2"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="57.5dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:text="3"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/buttonTambah"
+                android:layout_width="57.5dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:text="+"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="57.5dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="20dp"
+                android:text="4"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="57.5dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:text="5"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="57.5dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:text="6"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/buttonKurang"
+                android:layout_width="57.5dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:text="-"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="57.5dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="20dp"
+                android:text="7"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="57.5dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:text="8"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="57.5dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:text="9"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/buttonKali"
+                android:layout_width="57.5dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:text="*"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button0"
+                android:layout_width="57.5dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="20dp"
+                android:text="0"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/buttonC"
+                android:layout_width="57.5dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:text="C"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/buttonSama"
+                android:layout_width="57.5dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:text="="
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/buttonBagi"
+                android:layout_width="57.5dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:text="/"
+                android:textStyle="bold" />
+        </TableRow>
+
+    </TableLayout>
+
+    <!--Digunakan untuk menuju ke aktivity satunya yang berisi,
+     text view tentang aplikasi ini-->
+
+    <Button
+        android:id="@+id/buttonTentang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="TENTANG"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="@+id/tableLayout"
+        app:layout_constraintStart_toStartOf="@+id/tableLayout" />
+
+    <android.support.constraint.Group
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</android.support.constraint.ConstraintLayout>
